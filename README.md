@@ -9,5 +9,5 @@
   <img width="400" src="https://github.com/user-attachments/assets/1aece3b6-05e2-4ad9-a84e-55172d86e200">
 </p>
 <p align="center">
-    <em>Fig. 1: Training scheme for signle neuron, second oreder Leaky Integrate and Fire synapses.</em>
+    <em>Fig. 2: Training scheme for signle neuron, second oreder Leaky Integrate and Fire synapses.</em>
 </p>
