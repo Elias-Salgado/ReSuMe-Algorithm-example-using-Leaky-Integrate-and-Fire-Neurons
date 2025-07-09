@@ -16,6 +16,6 @@
   <img width="1000" src="https://github.com/user-attachments/assets/72ed340b-adba-421a-9eba-a2810cfbb42d">
 </p>
 <p align="center">
-    <em>Fig. 3: Second order Leaky Integrate and Fire synapses' potential.</em>
+    <em>Fig. 3: Second order Leaky Integrate and Fire synaptic potential.</em>
 </p>
 
