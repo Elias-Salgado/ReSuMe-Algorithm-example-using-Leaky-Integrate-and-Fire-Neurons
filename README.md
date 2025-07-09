@@ -9,5 +9,13 @@
   <img width="400" src="https://github.com/user-attachments/assets/1aece3b6-05e2-4ad9-a84e-55172d86e200">
 </p>
 <p align="center">
-    <em>Fig. 2: Training scheme for signle neuron, second oreder Leaky Integrate and Fire synapses.</em>
+    <em>Fig. 2: Training scheme for signle neuron, second order Leaky Integrate and Fire synapses.</em>
 </p>
+
+<p align="center">
+  <img width="1000" src="https://github.com/user-attachments/assets/72ed340b-adba-421a-9eba-a2810cfbb42d">
+</p>
+<p align="center">
+    <em>Fig. 3: Second order Leaky Integrate and Fire synapses' potential.</em>
+</p>
+
