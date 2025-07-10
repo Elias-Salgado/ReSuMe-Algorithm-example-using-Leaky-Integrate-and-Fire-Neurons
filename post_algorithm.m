@@ -1,30 +1,29 @@
-
 clear
-%[Bias_hf, tVecb] = poissonSpikeGen(100, 1, 1);
-%load("poisson_vector_3.mat")
-%load("post_train_wts_rigth_2.mat")
 
-% Hiperparametros
+% Hyperparameters
 tau_m = 0.05;
 tau_s = 0.01;
 t_i = 5;
 u_r = 1.5;
 th_v = 1;
+% 100us time resolution
 res_step = 0.0001;
 
-tau_pre = 0.05;%0.006;
-tau_post = 0.01;%0.006;
+tau_pre = 0.05;
+tau_post = 0.01;
 
-abs_1 = 1e-4;%20e-11;
-abs_2 = 1e-4;%20e-11;
+abs_1 = 1e-4;
+abs_2 = 1e-4;
 
 m_1 = -abs_1/tau_pre;
 m_2 = -abs_1/tau_post;
 
+% 10 seconds simulation
 time_window = 10;
+% 5 Hz frequency for the Poisson generator
 freq = 5;
 
-% Creación del vector de tiempo
+% Time vector creation
 vector=[0:res_step:time_window];
 T = length(vector);
 
@@ -56,7 +55,7 @@ function H_X= heavisidefunc(x)
     end
 end
 
-% Membrane potential behaviour
+% Membrane potential behavior
 function [eps] = epsilon_funct(t,t_i,tau_m, tau_s)
 if t_i <= t
     eps = ((exp(-max([-t_i,0]/tau_s))/(1-(tau_s/tau_m)))*(exp(-min([t-t_i,t])/tau_m)-exp(-min([t-t_i,t])/tau_s)))*heavisidefunc(t-t_i)*heavisidefunc(t);
@@ -78,7 +77,7 @@ end
 fil_signal = an_signal;
 end
 
-% Target computation
+% Reference response computation (S1 neuron)
 for j = 1:T
     % Analog response
     % Input 1
@@ -116,7 +115,7 @@ out_vector = zeros(1,T);
 epochs = 150;
 loss_vector = zeros(1,epochs);
 
-% Train loop
+% Resumerain loop
 for epoch = 1:epochs
     an_sum = zeros(1,T);
     out_vector = zeros(1,T);
