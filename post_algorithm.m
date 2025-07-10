@@ -1,6 +1,6 @@
 clear
 
-% Hyperparameters
+% 2nd order LIF neuron
 tau_m = 0.05;
 tau_s = 0.01;
 t_i = 5;
@@ -9,6 +9,7 @@ th_v = 1;
 % 100us time resolution
 res_step = 0.0001;
 
+% Training hyperparameters
 tau_pre = 0.05;
 tau_post = 0.01;
 
