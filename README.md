@@ -34,7 +34,7 @@ where the kernel function $\epsilon_{i,j}\left(t-\hat{t}_{i},s\right)$ can be ma
 </p>
 
 <p align="center">
-  <img width="800" src="https://github.com/user-attachments/assets/478eb8a3-ddca-4fb6-bcb0-e6f634e97923">
+  <img width="800" src="https://github.com/user-attachments/assets/533a2e49-501b-4120-a52f-9b8bdf1d2b13">
 </p>
 
 <p align="center">
